@@ -1,0 +1,299 @@
+<mxfile>
+    <diagram id="SiC5AR26ZeJheRb-6SR_" name="第 1 页">
+        <mxGraphModel dx="2241" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="79" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontFamily=Lucida Console;fontSize=15;align=left;strokeColor=#d6b656;fillColor=#FFF9EB;" vertex="1" parent="1">
+                    <mxGeometry x="-120" y="675" width="800" height="665" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="530" y="450" width="514" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="group;" vertex="1" connectable="0" parent="18">
+                    <mxGeometry x="-116" y="-10" width="630" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;dashed=1;strokeColor=#000000;fontSize=14;" vertex="1" parent="50">
+                    <mxGeometry y="-20" width="630" height="258.33" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=14;" vertex="1" parent="50">
+                    <mxGeometry x="300" y="65" width="240" height="108.33333333333333" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;font face=&quot;Lucida Console&quot; style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&amp;nbsp;集群&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" vertex="1" parent="50">
+                    <mxGeometry x="196" y="0.003333333333332078" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp;Driver&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#d6b656;fontFamily=Lucida Console;fontSize=15;align=center;fillColor=#fff2cc;" vertex="1" parent="50">
+                    <mxGeometry x="400" y="79.17" width="127" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-size: 14px&quot;&gt;&amp;nbsp;集群中的&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;color: rgb(0 , 0 , 0) ; font-size: 14px&quot;&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-size: 14px&quot;&gt;&amp;nbsp;某个节点&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-size: 14px&quot;&gt;&amp;nbsp;node 1&lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#FF0000;" vertex="1" parent="50">
+                    <mxGeometry x="300" y="32.5" width="90" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="&lt;font color=&quot;#000000&quot; style=&quot;background-color: rgb(255 , 249 , 235)&quot;&gt;&amp;nbsp; Driver&amp;nbsp;&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="50">
+                    <mxGeometry x="136" y="230" width="110" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="group;fontSize=14;dashed=1;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="440" y="100" width="820" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; line-height: 19px; font-size: 14px;&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 255); font-size: 14px;&quot;&gt;object&lt;/span&gt;&amp;nbsp;WordCount&amp;nbsp;{&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 255); font-size: 14px;&quot;&gt;def&lt;/span&gt;&amp;nbsp;main(arg:Array[&lt;span style=&quot;color: rgb(0, 0, 255); font-size: 14px;&quot;&gt;String&lt;/span&gt;])&amp;nbsp;:&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 255); font-size: 14px;&quot;&gt;Unit&lt;/span&gt;&amp;nbsp;=&amp;nbsp;{&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 255); font-size: 14px;&quot;&gt;val&lt;/span&gt;&amp;nbsp;sparkConf&amp;nbsp;=&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 255); font-size: 14px;&quot;&gt;new&lt;/span&gt;&amp;nbsp;SparkConf().setAppName(&lt;span style=&quot;color: rgb(163, 21, 21); font-size: 14px;&quot;&gt;&quot;WordCount&quot;&lt;/span&gt;)&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 255); font-size: 14px;&quot;&gt;val&lt;/span&gt;&amp;nbsp;sc&amp;nbsp;=&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 255); font-size: 14px;&quot;&gt;new&lt;/span&gt;&amp;nbsp;SparkContext(sparkConf)&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;sc.textFile(&lt;span style=&quot;color: rgb(163, 21, 21); font-size: 14px;&quot;&gt;&quot;/words.txt&quot;&lt;/span&gt;).flatMap(_.split(&lt;span style=&quot;color: rgb(163, 21, 21); font-size: 14px;&quot;&gt;&quot;&amp;nbsp;&quot;&lt;/span&gt;)).map.((_,&lt;span style=&quot;color: rgb(9, 134, 88); font-size: 14px;&quot;&gt;1&lt;/span&gt;)).reduceByKey(_+_).saveAsFile(&lt;span style=&quot;color: rgb(163, 21, 21); font-size: 14px;&quot;&gt;&quot;/out&quot;&lt;/span&gt;)&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;sc.stop&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=14;" vertex="1" parent="7">
+                    <mxGeometry width="820" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 19px ; font-size: 14px&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;&amp;nbsp; wc.jar&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#000000;rounded=0;fontSize=14;" vertex="1" parent="7">
+                    <mxGeometry x="350" y="145" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.514;entryY=0.005;entryDx=0;entryDy=0;fontSize=14;entryPerimeter=0;" edge="1" parent="1" source="5" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 19px&quot;&gt;提交 Application 程序到集群中：&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 19px&quot;&gt;spark-submit&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 19px&quot;&gt;--master&amp;nbsp;spark://node1:7077&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 19px&quot;&gt;--class&amp;nbsp;WordCount&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 19px&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;--executor-memory&amp;nbsp;1g&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 19px&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;--total-executor-core&amp;nbsp;4&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 19px&quot;&gt;wc.jar&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="840" y="290" width="240" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;fontSize=15;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.387;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="19" target="26">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1479" y="730" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="资源管理器&lt;br&gt;master" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=14;fontFamily=Lucida Console;spacingTop=6;spacing=2;" vertex="1" parent="1">
+                    <mxGeometry x="1464" y="529.17" width="156" height="60.83" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Lucida Console;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="46" target="19">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="970" y="560" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="&lt;div style=&quot;font-size: 15px&quot;&gt;①、节点的客户端（Driver）向资源管理器 Master&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 15px&quot;&gt;发送&amp;nbsp;&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;注册&lt;/b&gt; 和&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;申请计算资源&lt;/b&gt; 的请求&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#0000CC;" vertex="1" parent="1">
+                    <mxGeometry x="1060" y="510" width="380" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Master 是整个 spark 集群的老大，&lt;br&gt;负责任务资源的分配&lt;br&gt;Master 中没有资源，但是他调度资源" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;" vertex="1" parent="1">
+                    <mxGeometry x="1530" y="340" width="280" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 19px&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;--executor-memory&amp;nbsp;1g&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 19px&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;--total-executor-core&amp;nbsp;4&amp;nbsp;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="1130" y="470" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="1170" y="740" width="860" height="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="group" vertex="1" connectable="0" parent="40">
+                    <mxGeometry x="224" y="240" width="260" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fontFamily=Lucida Console;fontSize=15;align=left;" vertex="1" parent="32">
+                    <mxGeometry y="10" width="260" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fontFamily=Lucida Console;fontSize=15;align=left;" vertex="1" parent="32">
+                    <mxGeometry x="30" y="50" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;quot;consolas&amp;quot; , &amp;quot;courier new&amp;quot; , monospace ; line-height: 19px&quot;&gt;--executor-memory&amp;nbsp;1g&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;quot;consolas&amp;quot; , &amp;quot;courier new&amp;quot; , monospace ; line-height: 19px&quot;&gt;--total-executor-core 2&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;fontColor=#FF0000;" vertex="1" parent="32">
+                    <mxGeometry x="45" y="75" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&amp;nbsp;Worker 02&amp;nbsp;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;" vertex="1" parent="32">
+                    <mxGeometry x="-5" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&amp;nbsp;executor 进程&amp;nbsp;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;" vertex="1" parent="32">
+                    <mxGeometry x="30" y="40" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="&lt;font color=&quot;#421cff&quot;&gt;&amp;nbsp;task&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#421CFF;strokeWidth=1;" vertex="1" parent="32">
+                    <mxGeometry x="55" y="130" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="group" vertex="1" connectable="0" parent="40">
+                    <mxGeometry x="224" width="260" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fontFamily=Lucida Console;fontSize=15;align=left;" vertex="1" parent="31">
+                    <mxGeometry y="10" width="260" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fontFamily=Lucida Console;fontSize=15;align=left;" vertex="1" parent="31">
+                    <mxGeometry x="30" y="50" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;quot;consolas&amp;quot; , &amp;quot;courier new&amp;quot; , monospace ; line-height: 19px&quot;&gt;--executor-memory&amp;nbsp;1g&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;quot;consolas&amp;quot; , &amp;quot;courier new&amp;quot; , monospace ; line-height: 19px&quot;&gt;--total-executor-core 2&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;fontColor=#FF0000;" vertex="1" parent="31">
+                    <mxGeometry x="45" y="75" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&amp;nbsp;Worker 01&amp;nbsp;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;" vertex="1" parent="31">
+                    <mxGeometry x="-5" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&amp;nbsp;executor 进程&amp;nbsp;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;" vertex="1" parent="31">
+                    <mxGeometry x="30" y="40" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="&lt;font color=&quot;#421cff&quot;&gt;&amp;nbsp;task&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#421CFF;strokeWidth=1;" vertex="1" parent="31">
+                    <mxGeometry x="55" y="130" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="&lt;font color=&quot;#ff0000&quot;&gt;申请 4 个 cpu 核数&lt;br&gt;总共有两个 executor 进程&lt;br&gt;所以平均分配每个 executor 分配到 2 个核数&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;" vertex="1" parent="40">
+                    <mxGeometry x="520" y="310" width="340" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#B3B3B3;endArrow=blockThin;endFill=1;strokeColor=#B3B3B3;exitX=0.924;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="40" source="19">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="476" y="-170" as="sourcePoint"/>
+                        <mxPoint x="400" y="250" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="438" y="-60"/>
+                            <mxPoint x="586" y="-60"/>
+                            <mxPoint x="586" y="220"/>
+                            <mxPoint x="400" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="&lt;div&gt;②、&amp;nbsp;&lt;/div&gt;&lt;div&gt;Master 向指定的 worker 发送请求，&lt;/div&gt;&lt;div&gt;&lt;span&gt;worker开启对应的 executor 进程&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;（计算资源）&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#0000CC;" vertex="1" parent="1">
+                    <mxGeometry x="1240" y="640" width="290" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;fontSize=15;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="33">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1540" y="590" as="sourcePoint"/>
+                        <mxPoint x="1740" y="890" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1540" y="710"/>
+                            <mxPoint x="1710" y="710"/>
+                            <mxPoint x="1710" y="970"/>
+                            <mxPoint x="1524" y="970"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;" edge="1" parent="1" source="28" target="46">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="920" y="582" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1424" y="835"/>
+                            <mxPoint x="878" y="835"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" value="&lt;div&gt;&lt;font color=&quot;#0000cc&quot;&gt;③、executor 进程会向 Driver端&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#0000cc&quot;&gt;发送注册请求，&lt;/font&gt;&lt;span style=&quot;color: rgb(0 , 0 , 204)&quot;&gt;然后申请要计算的 task&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#0000cc&quot;&gt;&lt;b&gt;&lt;u&gt;(你要的资源我初始化好了，把你要计算的 task 发过来）&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#FF0000;" vertex="1" parent="1">
+                    <mxGeometry x="960" y="770" width="410" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;" edge="1" parent="1" source="35" target="46">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" target="46">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="680" y="721" as="sourcePoint"/>
+                        <mxPoint x="540" y="750" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="96" value="&lt;div style=&quot;line-height: 19px&quot;&gt;&lt;div&gt;&lt;font color=&quot;#421cff&quot; style=&quot;font-size: 15px&quot;&gt;④、TaskScheduler&amp;nbsp;对象&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#421cff&quot; style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;&lt;u style=&quot;background-color: rgb(255 , 255 , 0)&quot;&gt;按照执行执行顺序&lt;/u&gt;&lt;/b&gt;，依次遍历&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 0)&quot;&gt;&lt;font color=&quot;#421cff&quot; style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;每个&amp;nbsp;stage&amp;nbsp;中的&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#421cff&quot; style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;每个&amp;nbsp;taskSet&amp;nbsp;集合，&lt;/b&gt;&lt;/font&gt;&lt;b style=&quot;color: rgb(66 , 28 , 255)&quot;&gt;取出每一个&amp;nbsp;task&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(66 , 28 , 255)&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#421cff&quot; style=&quot;font-size: 15px&quot;&gt;依次提交到&amp;nbsp;worker&amp;nbsp;节点上的&amp;nbsp;executor&amp;nbsp;进程中去运行&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#FF0000;" vertex="1" parent="1">
+                    <mxGeometry x="820" y="1240" width="440" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="&lt;div style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;div style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;(1)&amp;nbsp;Driver&amp;nbsp;端会运行客户端程序中的&amp;nbsp;main&amp;nbsp;方法&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;(2)&amp;nbsp;在&amp;nbsp;main&amp;nbsp;方法中构建了&amp;nbsp;&lt;/font&gt;&lt;font color=&quot;#ff3333&quot;&gt;SparkContext&amp;nbsp;&lt;/font&gt;&lt;font color=&quot;#000000&quot;&gt;对象，该对象非常重要，它是所有&amp;nbsp;spark&amp;nbsp;程序的执行入口&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;在构建&amp;nbsp;Spark&amp;nbsp;对象的内部，也构建了这&amp;nbsp;2&amp;nbsp;个对象，一个是&amp;nbsp;&lt;/span&gt;&lt;font color=&quot;#ff3333&quot;&gt;DAGScheduler&lt;/font&gt;&lt;font color=&quot;#000000&quot;&gt;,&amp;nbsp;一个是&amp;nbsp;&lt;/font&gt;TaskScheduler&lt;/div&gt;&lt;br&gt;&lt;div style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;(3)&amp;nbsp;程序中涉及到了&amp;nbsp;rdd&amp;nbsp;大量的转換操作，最后给定一个&amp;nbsp;action,&amp;nbsp;触发任务的真正运行，&lt;/div&gt;&lt;div style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;这里就先按照&amp;nbsp;rdd&amp;nbsp;与&amp;nbsp;rdd&amp;nbsp;之间的依赖关系，先生成了一张&amp;nbsp;DAG&amp;nbsp;有向无环图，&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;图的方向就是&amp;nbsp;rdd&amp;nbsp;的算子操作顺序。最后是把&amp;nbsp;DAG&amp;nbsp;有向无环图发送给 &lt;/span&gt;DAGScheduler&amp;nbsp;&lt;font color=&quot;#000000&quot;&gt;对象&lt;/font&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;(4)&amp;nbsp;&lt;/span&gt;DAGScheduler&amp;nbsp;&lt;font color=&quot;#000000&quot;&gt;获取得到&amp;nbsp;DAG&amp;nbsp;有向无环图之后，按照宽依赖，进行&amp;nbsp;stage&amp;nbsp;的划分，&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;由于&amp;nbsp;rdd&amp;nbsp;的算子操作中，存在大量的宽依赖，这里划分出了很多个&amp;nbsp;stage,&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;每一个&amp;nbsp;stage&amp;nbsp;内部有很多可以并行运行的&amp;nbsp;task&amp;nbsp;线程，&lt;/div&gt;&lt;div style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;最后是把这些并行运行的&amp;nbsp;task 线程封装在一个&amp;nbsp;taskset 集合中。&lt;/div&gt;&lt;div&gt;&lt;u&gt;&lt;font color=&quot;#000000&quot;&gt;把一个一个的&amp;nbsp;taskSet&amp;nbsp;集合发送给&amp;nbsp;&lt;/font&gt;TaskScheduler&amp;nbsp;&lt;font color=&quot;#000000&quot;&gt;对象&lt;/font&gt;&lt;/u&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;(5)&amp;nbsp;&lt;/span&gt;TaskScheduler&amp;nbsp;&lt;font color=&quot;#000000&quot;&gt;对象获取得到了这些&amp;nbsp;taskSet&amp;nbsp;集合之后，依据 stage&amp;nbsp;与&amp;nbsp;stage&amp;nbsp;之间的依赖关系，&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;前面&amp;nbsp;stager&amp;nbsp;中&amp;nbsp;task&amp;nbsp;先运行，后面&amp;nbsp;stage&amp;nbsp;中的&amp;nbsp;task&amp;nbsp;在运行，&lt;/div&gt;&lt;div style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;最后&amp;nbsp;TaskScheduler&amp;nbsp;对象&lt;/div&gt;&lt;div style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;&lt;b&gt;&lt;u&gt;依次遍历每个 stage 中的每个&amp;nbsp;taskSet&amp;nbsp;集合，取出每一个&amp;nbsp;task, 提交到&amp;nbsp;worker&amp;nbsp;节点上的&amp;nbsp;executor&amp;nbsp;进程中去运行&lt;/u&gt;&lt;/b&gt;。&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#FF0000;" vertex="1" parent="1">
+                    <mxGeometry x="-100" y="710" width="790" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; text-align: left&quot;&gt;&lt;br&gt;&amp;nbsp;sc.textFile(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; text-align: left ; color: rgb(163 , 21 , 21)&quot;&gt;&quot;/words.txt&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; text-align: left&quot;&gt;).flatMap(_.split(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; text-align: left ; color: rgb(163 , 21 , 21)&quot;&gt;&quot;&amp;nbsp;&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; text-align: left&quot;&gt;)).map.((_,&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; text-align: left ; color: rgb(9 , 134 , 88)&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; text-align: left&quot;&gt;)).reduceByKey(_+_).saveAsFile(&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; text-align: left ; color: rgb(163 , 21 , 21)&quot;&gt;&quot;/out&quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; text-align: left&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;)&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#FF0000;labelBorderColor=#999999;dashed=1;" vertex="1" parent="1">
+                    <mxGeometry x="-95" y="1080" width="760" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="" style="endArrow=none;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;strokeColor=#00CC00;" edge="1" parent="1">
+                    <mxGeometry x="-100" y="680" width="50" height="50" as="geometry">
+                        <mxPoint x="420" y="1135" as="sourcePoint"/>
+                        <mxPoint x="420" y="1085" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="420" y="1115"/>
+                            <mxPoint x="420" y="1115"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="144" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="-40" y="1160" width="670" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#00CC00;" vertex="1" parent="144">
+                    <mxGeometry x="90" width="580" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="132" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fontFamily=Lucida Console;fontSize=15;align=left;strokeColor=#99CCFF;" vertex="1" parent="144">
+                    <mxGeometry x="170" y="5" width="480" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="&lt;font color=&quot;#00cc00&quot;&gt;Stage 0&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#FF0000;" vertex="1" parent="144">
+                    <mxGeometry y="15" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="&lt;font color=&quot;#421cff&quot;&gt;&amp;nbsp;task&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#421CFF;strokeWidth=1;" vertex="1" parent="144">
+                    <mxGeometry x="200" y="15" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&lt;font color=&quot;#421cff&quot;&gt;&amp;nbsp;task&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#421CFF;strokeWidth=1;" vertex="1" parent="144">
+                    <mxGeometry x="300" y="15" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="&lt;font color=&quot;#421cff&quot;&gt;&amp;nbsp;task&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#421CFF;strokeWidth=1;" vertex="1" parent="144">
+                    <mxGeometry x="390" y="15" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="&lt;font color=&quot;#421cff&quot;&gt;&amp;nbsp;task&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#421CFF;strokeWidth=1;" vertex="1" parent="144">
+                    <mxGeometry x="480" y="15" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="&lt;font color=&quot;#421cff&quot;&gt;&amp;nbsp;task&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#421CFF;strokeWidth=1;" vertex="1" parent="144">
+                    <mxGeometry x="570" y="15" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" value="&lt;font color=&quot;#66b2ff&quot; style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;taskSet&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#FF0000;" vertex="1" parent="144">
+                    <mxGeometry x="110" y="15" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="134" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#00CC00;" vertex="1" parent="144">
+                    <mxGeometry x="90" y="90" width="580" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fontFamily=Lucida Console;fontSize=15;align=left;strokeColor=#99CCFF;" vertex="1" parent="144">
+                    <mxGeometry x="170" y="95" width="480" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="136" value="&lt;font color=&quot;#00cc00&quot;&gt;Stage 0&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#FF0000;" vertex="1" parent="144">
+                    <mxGeometry y="105" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" value="&lt;font color=&quot;#421cff&quot;&gt;&amp;nbsp;task&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#421CFF;strokeWidth=1;" vertex="1" parent="144">
+                    <mxGeometry x="200" y="105" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="138" value="&lt;font color=&quot;#421cff&quot;&gt;&amp;nbsp;task&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#421CFF;strokeWidth=1;" vertex="1" parent="144">
+                    <mxGeometry x="300" y="105" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" value="&lt;font color=&quot;#421cff&quot;&gt;&amp;nbsp;task&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#421CFF;strokeWidth=1;" vertex="1" parent="144">
+                    <mxGeometry x="390" y="105" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="140" value="&lt;font color=&quot;#421cff&quot;&gt;&amp;nbsp;task&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#421CFF;strokeWidth=1;" vertex="1" parent="144">
+                    <mxGeometry x="480" y="105" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="141" value="&lt;font color=&quot;#421cff&quot;&gt;&amp;nbsp;task&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#421CFF;strokeWidth=1;" vertex="1" parent="144">
+                    <mxGeometry x="570" y="105" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="142" value="&lt;font color=&quot;#66b2ff&quot; style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;taskSet&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#FF0000;" vertex="1" parent="144">
+                    <mxGeometry x="110" y="105" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;rounded=0;strokeWidth=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;align=left;strokeColor=#00CC00;" vertex="1" parent="144">
+                    <mxGeometry x="350" y="60" width="35" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#421CFF;strokeWidth=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;dashed=1;dashPattern=1 2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="64" target="93">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="770" y="1230" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="470" y="1230"/>
+                            <mxPoint x="1030" y="1230"/>
+                            <mxPoint x="1030" y="1125"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;strokeWidth=1;fontFamily=Lucida Console;fontSize=15;fontColor=#FF0000;strokeColor=#421CFF;dashed=1;dashPattern=1 2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="65" target="83">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="1184" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="610" y="1185"/>
+                            <mxPoint x="920" y="1184"/>
+                            <mxPoint x="920" y="885"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="146" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Lucida Console;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#B3B3B3;endArrow=blockThin;endFill=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="941" y="580.4100000000001" as="sourcePoint"/>
+                        <mxPoint x="1464" y="579.5800000000002" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="147" value="&lt;div style=&quot;font-size: 15px&quot;&gt;⑤、当 task 任务运行完成之后，&lt;/div&gt;&lt;div style=&quot;font-size: 15px&quot;&gt;发送注销请求给 Master&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#808080;" vertex="1" parent="1">
+                    <mxGeometry x="1070" y="589.17" width="250" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="148" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.77;entryY=0.003;entryDx=0;entryDy=0;fontFamily=Lucida Console;fontSize=14;strokeColor=#B3B3B3;endArrow=blockThin;endFill=1;entryPerimeter=0;exitX=0.844;exitY=0.981;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="19" target="26">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1504" y="590" as="sourcePoint"/>
+                        <mxPoint x="1474" y="589.5800000000002" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="150" value="&lt;div&gt;&lt;font color=&quot;#808080&quot;&gt;⑥、master接受到 Driver端的注销请求之后，&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#808080&quot;&gt;然后通知对应的 worker&amp;nbsp;&lt;span&gt;节点关闭 executor 进程，&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;font color=&quot;#808080&quot;&gt;最后 worker 节点上的计算资源得到释放&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#B3B3B3;" vertex="1" parent="1">
+                    <mxGeometry x="1620" y="610" width="390" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="151" value="来源：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="110" y="30" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="152" value="https://www.bilibili.com/video/BV1BK4y1x7Z5/?spm_id_from=333.788.recommend_more_video.0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="170" y="30" width="830" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="153" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeColor=#d6b656;strokeWidth=1;fillColor=#fff2cc;fontFamily=Lucida Console;fontSize=15;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-170" y="680" width="20" height="660" as="geometry"/>
+                </mxCell>
+                <mxCell id="154" value="&lt;font style=&quot;font-size: 18px&quot; color=&quot;#d6b656&quot;&gt;&lt;b&gt;这些逻辑都在&lt;br&gt;Driver 端完成&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=15;fontFamily=Lucida Console;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="-330" y="987.5" width="150" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
