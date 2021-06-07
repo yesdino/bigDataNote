@@ -74,7 +74,7 @@ Azkaban 全流程调度：自动调度数据处理的流程的框架，比如 OD
 
 ### ③ 数据输出
 
-[06:45](https://www.bilibili.com/video/BV1df4y1U79z?p=4)
+[06:45](https://www.bilibili.com/video/BV1df4y1U79z?p=4&t=6m45s)
 
 数据仓库 ADS 层的数据将会输出到下面的出处：
 - **报表系统**：统计好的数据输出到报表中给领导汇报
@@ -84,20 +84,51 @@ Azkaban 全流程调度：自动调度数据处理的流程的框架，比如 OD
 
 
 
+## 项目需求
+
+[link](https://www.bilibili.com/video/BV1df4y1U79z?p=5)
+
+<img width=100% src="../img/数仓/项目需求.png"></img>
+
+
+
+## 技术选型
+
+[link](https://www.bilibili.com/video/BV1df4y1U79z?p=6)
+
+<img width=100% src="../img/数仓/技术选型.png"></img>
+
+[link 为什么要选这些框架](https://www.bilibili.com/video/BV1df4y1U79z?p=7)
+
+<img width=70% src="../img/数仓/技术选型2.png"></img>
+
+
+
+## 系统架构
+
+[link](https://www.bilibili.com/video/BV1df4y1U79z?p=8&spm_id_from=pageDriver)
+
+<img width=100% src="../img/数仓/系统架构.png"></img>
+
+**业务交互数据**：
+<b style="color:red"> 业务流程中产生的登录、订单、用户商品、支付等相关的数据</b>，通常存储在DB中，包括 Mysql、 Oracle 等
+
+**埋点用户行为数据**：
+<b style="color:red"> 用户在使用产品过程中，与客户端产品交互过程中产生的数据</b>，比如页面测览、点击、停留、评论、点赞收藏等
 
 
 
 
 
 
+<br><br><br><br><br><br><br><br><br>
+
+---
 
 
+<img width=0% src=""></img>
 
-<br><br><br>
-
-[看到 00:00 项目需求的那一 P](https://www.bilibili.com/video/BV1df4y1U79z?p=5)
-
-
+<b style="color:red"></b>
 
 
 
