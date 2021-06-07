@@ -20,7 +20,7 @@ spark 底层源码就是 scala 写的
 
 ## scala 6 个特征
 
-[link](https://www.bilibili.com/video/av33997956/?p=1)
+[link](https://www.bilibili.com/video/av33997956/?p=1&t=13m11s)
 - **可以与 Java 无缝整合**。Scala 和 Java 都可以在 JVM 中运行，因为他们都要先编译成 .class
 - **scala 可以与 Java 互相调用**。（不过不可以两种语言混合写在一个文件中
 - **自动进行类型推断**。定义变量 var 或常亮 val 的时候可以不用生命类型，语言会根据初始值确定类型。
