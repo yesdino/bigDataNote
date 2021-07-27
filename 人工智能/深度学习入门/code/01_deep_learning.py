@@ -311,7 +311,7 @@ def main(argv):
 
 if __name__ == "__main__":
     # 代码1：TensorFlow的基本结构
-    # tensorflow_demo()
+    tensorflow_demo()
     # 代码2：图的演示
     # graph_demo()
     # 代码3：会话的演示
@@ -324,4 +324,4 @@ if __name__ == "__main__":
     # linear_regression()
     # 代码7：命令行参数演示
     # command_demo()
-    tf.app.run()
+    # tf.app.run()
