@@ -246,54 +246,91 @@ conf.set("spark.kryo.registrar", "atguigu.com.MyKryoRegistrator");
 
 ### 1.1.6 调节本地化等待时长
 
-Spark 作业运行过程中，Driver 会对每一个 stage 的 task 进行分配。
-根据 Spark 的task 分配算法，Spark 希望 task 能够运行在它要计算的数据算在的节点（数据本地化思想），这样就可以避免数据的网络传输。通常来说，task 可能不会被分配到它处理的数据所在的节点， 因为这些节点可用的资源可能已经用尽，此时，Spark 会等待一段时间，默认 3s，如果等待指定时间后仍然无法在指定节点运行，那么会自动降级，尝试将 task 分配到比较差的本地
+[link](https://www.bilibili.com/video/BV1434y1m7FG?p=33&t=13m39s)
 
-化级别所对应的节点上，比如将 task 分配到离它要计算的数据比较近的一个节点，然后进行计算，如果当前级别仍然不行，那么继续降级。
-当 task 要处理的数据不在 task 所在节点上时，会发生数据的传输。task 会通过所在节点的BlockManager 获取数据，BlockManager 发现数据不在本地时，户通过网络传输组件从数据所在节点的BlockManager 处获取数据。
-网络传输数据的情况是我们不愿意看到的，大量的网络传输会严重影响性能，因此，我们希望通过调节本地化等待时长，如果在等待时长这段时间内，目标节点处理完成了一部分task，那么当前的 task 将有机会得到执行，这样就能够改善 Spark 作业的整体性能。
-Spark 的本地化等级如表所示：
+Spark 作业运行过程中， Driver 会对每一个 stage 的 task 进行分配。
+根据 Spark 的 task 分配算法， Spark 希望  **==task 能够运行在它要计算的数据算在的节点（数据本地化思想）==**，
+这样就可以避免数据的网络传输。
 
-名称 解析
-PROCESS_LOCAL 进程本地化，task 和数据在同一个 Executor 中，性
-能最好。
-NODE_LOCAL 节点本地化，task 和数据在同一个节点中，但是task和数据不在同一个 Executor 中，数据需要在进程
-间进行传输。
-RACK_LOCAL 机架本地化，task 和数据在同一个机架的两个节点
-上，数据需要通过网络在节点之间进行传输。
-NO_PREF 对于 task 来说，从哪里获取都一样，没有好坏之
-分。
-ANY task 和数据可以在集群的任何地方，而且不在一个
-机架中，性能最差。
-在 Spark 项目开发阶段，可以使用 client 模式对程序进行测试，此时，可以在本地看到比较全的日志信息， 日志信息中有明确的 task 数据本地化的级别， 如果大部分都是PROCESS_LOCAL，那么就无需进行调节，但是如果发现很多的级别都是 NODE_LOCAL、ANY，那么需要对本地化的等待时长进行调节，通过延长本地化等待时长，看看 task 的本地化级别有没有提升，并观察 Spark 作业的运行时间有没有缩短。
-注意，过犹不及，不要将本地化等待时长延长地过长，导致因为大量的等待时长，使得
+通常来说， **task 可能不会被分配到它处理的数据所在的节点，** 因为这些节点可用的资源可能已经用尽，
+此时， Spark 会等待一段时间，默认 3s ，
+**如果等待指定时间后仍然无法在指定节点运行，那么会自动降级，尝试将 task 分配到比较差的本地化级别所对应的节点上**，
+比如将 task 分配到离它要计算的数据比较近的一个节点，然后进行计算，
+如果当前级别仍然不行，那么继续降级。
 
-Spark 作业的运行时间反而增加了。
+当 task 要处理的数据不在 task 所在节点上时，会发生数据的传输。 
+task 会通过所在节点的 **`BlockManager`** 获取数据， 
+BlockManager 发现数据不在本地时，户通过网络传输组件从数据所在节点的 BlockManager 处获取数据。
 
-Spark 本地化等待时长的设置如代码所示：
+网络传输数据的情况是我们不愿意看到的，**大量的网络传输会严重影响性能**，
+因此，我们希望 **通过调节本地化等待时长**，
+如果在等待时长这段时间内，目标节点处理完成了一部分 task ，
+那么当前的 task 将有机会得到执行，这样就能够改善 Spark 作业的整体性能。
+
+Spark 的本地化等级如下所示：
+
+- **`PROCESS_LOCAL`**： 进程本地化，task 和数据在同一个 Executor 中，性能最好。
+- **`NODE_LOCAL`**： 节点本地化，task 和数据在同一个节点中，但是 task 和数据不在同一个 Executor 中，数据需要在进程间进行传输。
+- **`RACK_LOCAL`**： 机架本地化，task 和数据在同一个机架的两个节点上，数据需要通过网络在节点之间进行传输。
+- **`NO_PREF`**： 对于 task 来说，从哪里获取都一样，没有好坏之分。
+- **`ANY`**： task 和数据可以在集群的任何地方，而且不在一个机架中，性能最差。
+
+TODO: client 模式 ??? 什么是 client 模式 ？？？
+
+在 Spark 项目开发阶段，**==可以使用 client 模式对程序进行测试，
+此时，可以在本地看到比较全的日志信息==， 日志信息中有明确的 task 数据本地化的级别， 
+如果大部分都是 `PROCESS_LOCAL` ，那么就无需进行调节，
+但是如果发现很多的级别都是 `NODE_LOCAL` 、 ANY ，那么需要对本地化的等待时长进行调节，
+通过延长本地化等待时长，看看 task 的本地化级别有没有提升，并观察 Spark 作业的运行时间有没有缩短。**
+
+注意，过犹不及，不要将本地化等待时长延长地过长，导致因为大量的等待时长，使得Spark 作业的运行时间反而增加了。
+
+Spark **本地化等待时长**的设置如代码所示：
+```scala
+var conf = new SparkConf().set("spark.locality.wait", "6")  // 默认是 3s, 调节成 6 秒
+```
+
+
+
 
 ---
 
 ## 1.2 算子调优
 
-1.2.1算子调优一：mapPartitions
-普通的 map 算子对RDD 中的每一个元素进行操作，而 mapPartitions 算子对RDD 中每
+### 1.2.1 算子调优一：`mapPartitions`
 
-一个分区进行操作。如果是普通的 map 算子，假设一个 partition 有 1 万条数据，那么 map
+[link](https://www.bilibili.com/video/BV1434y1m7FG?p=34&spm_id_from=pageDriver&t=0m2s)
+普通的 map 算子对 RDD 中的每一个元素进行操作，
+而 **mapPartitions 算子对 RDD 中 ==每一个分区== 进行操作**。
 
-算子中的 function 要执行 1 万次，也就是对每个元素进行操作。
+- 如果是普通的 map 算子，假设一个 partition 有 1 万条数据，
+那么 map 算子中的 function 要执行 1 万次，也就是对每个元素进行操作。
+- 如果是 mapPartition 算子，由于一个 task 处理一个 RDD 的 partition ，
+那么**一个 task 只会执行一次 function ， function 一次接收所有的 partition 数据，效率比较高**。
 
-如果是 mapPartition 算子，由于一个 task 处理一个 RDD 的 partition，那么一个 task 只会执行一次function，function 一次接收所有的partition 数据，效率比较高。
+![](img/2022_01_15_200151.png)
 
-比如，当要把 RDD 中的所有数据通过 JDBC 写入数据，如果使用 map 算子，那么需要对 RDD 中的每一个元素都创建一个数据库连接，这样对资源的消耗很大，如果使用mapPartitions 算子，那么针对一个分区的数据，只需要建立一个数据库连接。
-mapPartitions 算子也存在一些缺点：对于普通的 map 操作，一次处理一条数据，如果在处理了 2000 条数据后内存不足，那么可以将已经处理完的 2000 条数据从内存中垃圾回收掉；但是如果使用mapPartitions 算子，但数据量非常大时，function 一次处理一个分区的数据，如果一旦内存不足，此时无法回收内存，就可能会OOM，即内存溢出。
-因此，mapPartitions 算子适用于数据量不是特别大的时候，此时使用 mapPartitions 算子对性能的提升效果还是不错的。（当数据量很大的时候，一旦使用 mapPartitions 算子，就会直接OOM）
-在项目中，应该首先估算一下 RDD 的数据量、每个 partition 的数据量，以及分配给每个 Executor 的内存资源，如果资源允许，可以考虑使用 mapPartitions 算子代替 map。
+> 比如，当要把 RDD 中的所有数据通过 JDBC 写入数据，如果使用 map 算子，那么需要对 RDD 中的每一个元素都创建一个数据库连接，这样对资源的消耗很大，
+如果使用 mapPartitions 算子，那么针对一个分区的数据，只需要建立一个数据库连接。
 
-1.2.2算子调优二：foreachPartition 优化数据库操作
-在生产环境中，通常使用 foreachPartition 算子来完成数据库的写入，通过 foreachPartition
+mapPartitions 算子也存在一些缺点：
+对于普通的 map 操作，一次处理一条数据，如果在处理了 2000 条数据后内存不足，那么可以将已经处理完的 2000 条数据从内存中垃圾回收掉；
+但是如果**使用 mapPartitions 算子，但数据量非常大时**， function 一次处理一个分区的数据，
+**如果一旦内存不足，此时无法回收内存，就可能会 OOM ，即内存溢出**。
 
-算子的特性，可以优化写数据库的性能。
+因此，mapPartitions 算子适用于数据量不是特别大的时候，此时使用 mapPartitions 算子对性能的提升效果还是不错的。
+（当数据量很大的时候，一旦使用 mapPartitions 算子，就会直接OOM）
+
+应该首先估算一下 RDD 的数据量、每个 partition 的数据量，以及分配给每个 Executor 的内存资源，
+如果==资源允许==，可以考虑使用 mapPartitions 算子代替 map。
+
+---
+### 1.2.2 算子调优二：`foreachPartition` 优化数据库操作
+
+[link](https://www.bilibili.com/video/BV1434y1m7FG?p=34&spm_id_from=pageDriver&t=0m32s)
+
+在生产环境中，通常使用 foreachPartition 算子来完成数据库的写入，
+通过 foreachPartition 算子的特性，可以优化写数据库的性能。
 
 如果使用 foreach 算子完成数据库的操作，由于 foreach 算子是遍历 RDD 的每条数据， 因此，每条数据都会建立一个数据库连接，这是对资源的极大浪费，因此，对于写数据库操作，我们应当使用foreachPartition 算子。
 与 mapPartitions 算子非常相似，foreachPartition 是将 RDD 的每个分区作为遍历对象， 一次处理一个分区的数据，也就是说，如果涉及数据库的相关操作，一个分区的数据只需要创建一次数据库连接，如图所示：
