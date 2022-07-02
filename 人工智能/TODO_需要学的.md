@@ -8,3 +8,17 @@
     - [ ] github：[MultiObjectiveOptimization](https://github.com/zhegeliang2/MultiObjectiveOptimization)
 
 - [ ] 谷歌模型BERT [link](https://www.zhuanzhi.ai/document/d7d4f5e6a73853903d76cc0ad0e03151)
+
+- [ ] 深度学习的因果推理： [CNN已老，GNN来了：重磅论文讲述深度学习的因果推理（附资源）](https://blog.csdn.net/qq_29462849/article/details/80745694)
+
+
+
+
+
+
+
+
+
+
+
+
