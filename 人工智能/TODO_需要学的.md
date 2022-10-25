@@ -11,8 +11,7 @@
 
 - [ ] 深度学习的因果推理： [CNN已老，GNN来了：重磅论文讲述深度学习的因果推理（附资源）](https://blog.csdn.net/qq_29462849/article/details/80745694)
 
-
-
+- [ ] 非常好的文章，有空要看 [FFM及DeepFFM模型在推荐系统的探索](https://zhuanlan.zhihu.com/p/67795161)
 
 
 
